@@ -5,8 +5,8 @@ public class Invoice
 
   private double pricePerPart;
   private int numberOfPurchasedParts;
-  private String partNumber;
-  private String partDescription;
+  private String partNumber,
+                 partDescription;
 
   public Invoice() {
     pricePerPart = 0.0;
@@ -26,7 +26,7 @@ public class Invoice
     }
     invoiceAmount = numberOfPurchasedParts * pricePerPart;
     return invoiceAmount;
-  } // [END_METHOD : getInvoiceAmount()]
+  } // [END_METHOD : getInvoiceAmount]
 
   public double getPricePerPart() {
     return pricePerPart;
@@ -34,7 +34,7 @@ public class Invoice
 
   public int getNumberOfPurchasedParts() {
     return numberOfPurchasedParts;
-  } // [END_METHOD : getNumberOfPurchasedParts()]
+  } // [END_METHOD : getNumberOfPurchasedParts]
 
   public String getPartNumber() {
     return partNumber;
@@ -42,23 +42,23 @@ public class Invoice
 
   public String getPartDescription() {
     return partDescription;
-  } // [END_METHOD : getPartDescription()]
+  } // [END_METHOD : getPartDescription]
 
   public void setNumberOfPurchasedParts(int newNumberOfPurchasedParts) {
     numberOfPurchasedParts = newNumberOfPurchasedParts;
-  } // [END_METHOD : setNumberOfPurchasedParts()]
+  } // [END_METHOD : setNumberOfPurchasedParts]
 
   public void setPartDescription(String newPartDescription) {
     partDescription = newPartDescription;
-  } // [END_METHOD : setPartDescription()]
+  } // [END_METHOD : setPartDescription]
 
   public void setPartNumber(String newPartNumber) {
     partNumber = newPartNumber;
-  } // [END_METHOD : setPartNumber()]
+  } // [END_METHOD : setPartNumber]
 
   public void setPricePerPart(double newPricePerPart) {
     pricePerPart = newPricePerPart;
-  } // [END_METHOD : setPricePerPart()]
+  } // [END_METHOD : setPricePerPart]
 
 
 } // [END_CLASS : Invoice]
